@@ -5,7 +5,9 @@ public class employee {
     private String Fname, Lname, ID, gender, position;
     private int salary;
 
-    public employee(String firstname, String Lastname, String Gender, int count) {
+    public employee(String firstname, String Lastname, String Gender, int count)
+    {
+
         this.Fname = firstname;
         this.Lname = Lastname;
         this.gender = Gender;
@@ -16,6 +18,13 @@ public class employee {
             System.out.println("Missing name or gender, ID set to default 0");
             this.ID = "0";
         }
+    }
+    public employee () {
+
+        this.Fname = "blank";
+        this.Lname = "blank";
+        this.gender = "blank";
+        int ID = 00000;
     }
     public int returnSalary(){
         return salary;
