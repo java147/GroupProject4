@@ -22,12 +22,14 @@ public class Main
         }
 
         byte count = 1;
-        new employee(firstname, lastname, gender, count);
+        employee user = new employee(firstname, lastname, gender, count);
         String[] position = new String[]{"Store Manager", "Branch Manager", "Executive VP", "Register"};
         int index = (new Random()).nextInt(position.length);
         System.out.println(position[index]);
         String job = position[index];
         int salary;
+
+
 
     }
 
