@@ -8,9 +8,11 @@ public class Main
 
     public static void main(String[] args)
     {
-        ExecutiveVP evp=new ExecutiveVP("Test", "Test1", "", 0);
-        evp.returnSalary();
-        evp.hasBenefit();
+      //  ExecutiveVP evp=new ExecutiveVP("Test", "Test1", "", 0);
+      //  evp.returnSalary();
+     // evp.hasBenefit();
+
+
 
         Scanner input = new Scanner(System.in);
 
