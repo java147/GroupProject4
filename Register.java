@@ -1,11 +1,16 @@
 package com.company;
 
 public class Register extends employee {
-    private int salary = 35000;
+    private final double rate = 10.75;
+
+    private boolean clearance = false;
+
     public Register (String firstname, String Lastname, String Gender, int count) {
         super (firstname, Lastname, Gender, count);
     }
 
-
+    public boolean getClearance() {
+        return clearance;
+    }
 
 }

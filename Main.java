@@ -29,7 +29,6 @@ public class Main
         String job = position[index];
         int salary;
 
-
     }
 
     public static void main(String[] args)
