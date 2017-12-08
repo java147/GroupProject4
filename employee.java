@@ -1,21 +1,9 @@
 package com.company;
 
-public class employee {
+public class employee implements Person {
 
     private String Fname, Lname, ID, gender, position;
-    private int salary;
-
-    public String getFirstName () {
-        return this.Fname;
-    }
-
-    public String getLastName () {
-        return this.Lname;
-    }
-
-    public String getGender () {
-        return this.gender;
-    }
+    private double rate;
 
     public employee(String firstname, String Lastname, String Gender, int count)
     {
@@ -23,13 +11,16 @@ public class employee {
         this.Fname = firstname;
         this.Lname = Lastname;
         this.gender = Gender;
-        if(this.Fname.length() > 0 && this.Lname.length() > 0 && this.gender.length() > 0) {
+        if(this.Fname.length() > 1 || this.Lname.length() > 1 || this.gender.length() > 1)
+        {
             this.ID = this.Fname.charAt(0) + this.Lname.charAt(0) + "umbc" + this.gender.toUpperCase().charAt(0) + count;
             System.out.println(this.Fname + " " + this.Lname + " ID number is " + this.ID);
-        } else {
+        }
+        else
+            {
             System.out.println("Missing name or gender, ID set to default 0");
             this.ID = "0";
-        }
+            }
     }
     public employee ()
     {
@@ -39,8 +30,8 @@ public class employee {
         this.gender = "blank";
         int ID = 00000;
     }
-    public int returnSalary(){
-        return salary;
+    public double returnRate(){
+        return rate;
     }
     public boolean hasBenefit(){
         return false;
@@ -48,5 +39,26 @@ public class employee {
     public boolean haspension() {
         return false;
     }
+
+    @Override
+    public String getFirstName() {
+        return Fname;
+    }
+
+    @Override
+    public String getLastName() {
+        return Lname;
+    }
+
+    @Override
+    public String getGender() {
+        return gender;
+    }
+    //  public String getName() {return Fname;}
+ //   public String getGender() {return gender;}
+
+
+
+
 
 }
