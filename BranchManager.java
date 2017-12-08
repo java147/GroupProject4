@@ -13,4 +13,7 @@ public class BranchManager extends employee {
         return clearance;
     }
 
+    public double returnRate() {
+        return rate;
+    }
 }
