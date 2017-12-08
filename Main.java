@@ -42,8 +42,6 @@ public class Main
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter Employee Level Number from 1 and 4: ");
-
         String employeeLevel = input.nextLine();
 
         System.out.println(employeeLevel);
