@@ -2,8 +2,8 @@ package com.company;
 
 public interface Person
 {
-   abstract String getName();
-   abstract String getGender();
-
+    abstract String getFirstName();
+    abstract String getLastName();
+    abstract String getGender();
 
 }
