@@ -3,7 +3,19 @@ package com.company;
 public class employee {
 
     private String Fname, Lname, ID, gender, position;
-    private double rate;
+    private int salary;
+
+    public String getFirstName () {
+        return this.Fname;
+    }
+
+    public String getLastName () {
+        return this.Lname;
+    }
+
+    public String getGender () {
+        return this.gender;
+    }
 
     public employee(String firstname, String Lastname, String Gender, int count)
     {
@@ -11,16 +23,13 @@ public class employee {
         this.Fname = firstname;
         this.Lname = Lastname;
         this.gender = Gender;
-        if(this.Fname.length() > 1 && this.Lname.length() > 1 && this.gender.length() > 1)
-        {
+        if(this.Fname.length() > 0 && this.Lname.length() > 0 && this.gender.length() > 0) {
             this.ID = this.Fname.charAt(0) + this.Lname.charAt(0) + "umbc" + this.gender.toUpperCase().charAt(0) + count;
             System.out.println(this.Fname + " " + this.Lname + " ID number is " + this.ID);
-        }
-        else
-            {
+        } else {
             System.out.println("Missing name or gender, ID set to default 0");
             this.ID = "0";
-            }
+        }
     }
     public employee ()
     {
@@ -30,8 +39,8 @@ public class employee {
         this.gender = "blank";
         int ID = 00000;
     }
-    public double returnRate(){
-        return rate;
+    public int returnSalary(){
+        return salary;
     }
     public boolean hasBenefit(){
         return false;
@@ -39,10 +48,5 @@ public class employee {
     public boolean haspension() {
         return false;
     }
-  //  public String getName() {return Fname;}
- //   public String getGender() {return gender;}
-
-
-
 
 }
