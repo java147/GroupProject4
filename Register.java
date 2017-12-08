@@ -13,4 +13,7 @@ public class Register extends employee {
         return clearance;
     }
 
+    public double returnRate() {
+        return rate;
+    }
 }
