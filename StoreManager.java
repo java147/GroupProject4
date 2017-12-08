@@ -13,4 +13,7 @@ public class StoreManager extends employee{
         return clearance;
     }
 
+    public double returnRate() {
+        return rate;
+    }
 }
