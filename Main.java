@@ -29,6 +29,7 @@ public class Main
         String job = position[index];
         int salary;
 
+
     return emp;
     }
 
@@ -45,15 +46,23 @@ public class Main
         switch (random){
             case 1:
                 Register reg = new Register(emp.getFirstName(), emp.getLastName(), emp.getGender(), 1);
+                Deduction tax = new Deduction(reg.returnRate());
+                tax.deductions();
                 break;
             case 2:
                 StoreManager sm = new StoreManager(emp.getFirstName(), emp.getLastName(), emp.getGender(), 1);
+                Deduction tax2 = new Deduction(sm.returnRate());
+                tax2.deductions();
                 break;
             case 3:
                 BranchManager bm = new BranchManager(emp.getFirstName(), emp.getLastName(), emp.getGender(), 1);
+                Deduction tax3 = new Deduction(bm.returnRate());
+                tax3.deductions();
                 break;
             case 4:
                 ExecutiveVP vp = new ExecutiveVP(emp.getFirstName(), emp.getLastName(), emp.getGender(), 1);
+                Deduction tax4 = new Deduction(vp.returnRate());
+                tax4.deductions();
                 break;
             default:
 
@@ -63,13 +72,8 @@ public class Main
 
 
 
-        Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter Employee Level Number from 1 and 4: ");
 
-        String employeeLevel = input.nextLine();
-
-        System.out.println(employeeLevel);
 
     }
 
