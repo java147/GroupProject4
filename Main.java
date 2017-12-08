@@ -42,8 +42,6 @@ public class Main
 
         employee emp = setter();
 
-        System.out.println(emp.getName());
-
         switch (random){
             case 1:
                 Register reg = new Register(emp.getFirstName(), emp.getLastName(), emp.getGender(), 1);
