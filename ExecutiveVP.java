@@ -16,6 +16,7 @@ public class ExecutiveVP extends employee {
         return clearance;
     }
 
-
-
+    public double returnRate() {
+        return rate;
+    }
 }
